@@ -17,7 +17,7 @@ h1 {
   text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
-  padding-bottom: 2rem !important;
+  padding-bottom: 2rem;
 }
 
 p {
@@ -131,7 +131,8 @@ p {
   }
   h1 {
     font-size: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0;
+
   }
   .score-actions-container {
     gap: 8rem;
