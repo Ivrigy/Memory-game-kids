@@ -117,6 +117,8 @@ p {
 }
 
 /* Media responsive */
+
+
 @media screen and (max-width: 640px) {
 
   body {
@@ -137,7 +139,6 @@ p {
   .score-actions-container {
     gap: 8rem;
     margin-top: -10px;
-    padding-bottom: 80px;
   }
   .actions {
     font-size: 0.8rem;
