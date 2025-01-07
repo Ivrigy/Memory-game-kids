@@ -1,4 +1,12 @@
 // main container and variables 
+var gridContainer=document.querySelector(".grid-container");
+var cards = [];
+var firstCard = null;
+var secondCard = null;
+var lockBoard = false;
+var score = 0;
+
+
 
 //cards data
 
