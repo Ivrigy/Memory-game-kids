@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+
+
 
 /*Body*/
+body { 
+    font-family: 'Kodchasan', sans-serif;
+}
+
 
 /*Text*/
+h1 {
+    
+}
 
 /* Buttons & counting*/
 
