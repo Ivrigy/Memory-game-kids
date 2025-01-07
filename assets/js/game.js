@@ -26,6 +26,8 @@ var cardData = [
   
 
 //score count
+document.querySelector(".score").textContent = score;
+
 
 // start game
 initializeGame();
@@ -36,6 +38,26 @@ function initializeGame() {
   shuffleCards();
   generateCards();
 }
+
+//cards dom
+
+function generateCards() {
+    gridContainer.innerHTML = "";
+    for (var i = 0; i < cards.length; i++) {
+      var card = cards[i];
+      var cardElement = document.createElement("div");
+      cardElement.classList.add("card");
+      cardElement.setAttribute("data-name", card.name);
+      var innerHTML = 
+        "<div class=\"front\">" +
+        "  <img class=\"front-image\" src=\"" + card.image + "\" />" +
+        "</div>" +
+        "<div class=\"back\"></div>";
+      cardElement.innerHTML = innerHTML;
+      gridContainer.appendChild(cardElement);
+      cardElement.addEventListener("click", flipCard);
+    }
+  }
 
 //duplicate array
 

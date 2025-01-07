@@ -12,8 +12,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
+    flex-direction: column;
 }
 
 
@@ -48,6 +47,19 @@ p {
   }
 
 /*Cards general*/
+.card {
+    height: 110px; 
+    width: 110px;  
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out; /* Only rotate transform is needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Light card shadow */
+  }
 
 
 /*Card sides*/
