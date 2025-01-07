@@ -28,6 +28,14 @@ var cardData = [
 //score count
 document.querySelector(".score").textContent = score;
 
+// action
+var actionButton = document.querySelector(".actions");
+if (actionButton) {
+  actionButton.addEventListener("click", function() {
+    restart();
+  });
+}
+
 
 // start game
 initializeGame();
