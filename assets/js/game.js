@@ -1,4 +1,4 @@
-// main container and variables
+// Main container and variables (ES5 JS Hint change)
 var gridContainer = document.querySelector(".grid-container");
 var cards = [];
 var firstCard = null;
@@ -6,7 +6,7 @@ var secondCard = null;
 var lockBoard = false;
 var score = 0;
 
-//cards data
+// Card data
 var cardData = [
   { name: "beetle", image: "assets/images/beetle.png" },
   { name: "chipmunk", image: "assets/images/chipmunk.png" },
@@ -22,10 +22,10 @@ var cardData = [
   { name: "whale", image: "assets/images/whale.png" },
 ];
 
-//score count
+// Score count
 document.querySelector(".score").textContent = score;
 
-// action
+// Action button (JS Hint adaption)
 var actionButton = document.querySelector(".actions");
 if (actionButton) {
   actionButton.addEventListener("click", function () {
@@ -33,7 +33,7 @@ if (actionButton) {
   });
 }
 
-// start game
+// Start the game
 initializeGame();
 
 function initializeGame() {
@@ -43,7 +43,7 @@ function initializeGame() {
   generateCards();
 }
 
-//cards dom
+//Cards DoM
 
 function generateCards() {
   gridContainer.innerHTML = "";
@@ -65,68 +65,63 @@ function generateCards() {
   }
 }
 
-//duplicate array
-
-//shuffle Fisher-Yates as seen in many different sources
+//Shuffle cards (Fisher-Yates in ES5)
 function shuffleCards() {
   var currentIndex = cards.length;
   while (currentIndex !== 0) {
     var randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
-    //swap
     var temp = cards[currentIndex];
     cards[currentIndex] = cards[randomIndex];
     cards[randomIndex] = temp;
   }
 }
 
-//flip cards
+//Flip cards
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
-
   this.classList.add("flipped");
-
   if (!firstCard) {
     firstCard = this;
     return;
   }
-
   secondCard = this;
   score++;
   document.querySelector(".score").textContent = score;
   lockBoard = true;
-
   checkForMatch();
 }
 
-//check matching
+// Check match
 function checkForMatch() {
-  var isMatch = firstCard.getAttribute("data-name") === secondCard.getAttribute("data-name");
+  var isMatch =
+    firstCard.getAttribute("data-name") ===
+    secondCard.getAttribute("data-name");
   if (isMatch) {
     disableCards();
   } else {
     unflipCards();
   }
 }
-//freeze matched
+
+// Freeze match
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
   resetBoard();
 }
 
-//flip back if not match
+//Unflip non matched
 function unflipCards() {
-  setTimeout(function() {
+  setTimeout(function () {
     firstCard.classList.remove("flipped");
     secondCard.classList.remove("flipped");
     resetBoard();
   }, 1000);
 }
 
-//reset and restart
-
+// Reset & restart
 function resetBoard() {
   firstCard = null;
   secondCard = null;
