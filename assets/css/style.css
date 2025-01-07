@@ -1,47 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /*Body*/
-body { 
-    min-height: 100vh;
-    background-color: #55AD9B;
-    font-family: 'Kodchasan', sans-serif;
-    color: rgb(11, 3, 45);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+body {
+  min-height: 100vh;
+  background-color: #55ad9b;
+  font-family: "Kodchasan", sans-serif;
+  color: rgb(11, 3, 45);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
-
 
 /*Text*/
 h1 {
-    font-weight: 600;
-    text-align: center;
-    font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 /* Buttons & container*/
 .score-actions-container {
-    display: inline-flex;
-    align-items: center;
-    gap: 20rem;
-  }
+  display: inline-flex;
+  align-items: center;
+  gap: 20rem;
+}
 .score {
-    color: red;
+  color: red;
 }
 .actions {
-    background-color: #deef42;
-    color:black;
-    border: none;
-    border-radius: none;
-    padding: 0.5rem 1rem;
+  background-color: #deef42;
+  color: black;
+  border: none;
+  border-radius: none;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   font-family: "Kodchasan", sans-serif;
   font-size: 0.9rem;
@@ -49,31 +45,30 @@ p {
 
 /*Container*/
 .grid-container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(6, 1fr);
-    max-width: 120vw;
-    row-gap: 3vmin;
-    column-gap: 2vmin;
-    margin-bottom: 0.5rem;
-    margin-top: -32px;
-  }
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 120vw;
+  row-gap: 3vmin;
+  column-gap: 2vmin;
+  margin-bottom: 0.5rem;
+  margin-top: -32px;
+}
 
 /*Cards general*/
 .card {
-    height: 110px; 
-    width: 110px;  
-    border-radius: 10px;
-    background-color: white;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out; /* Only rotate transform is needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Light card shadow */
-  }
-
+  height: 110px;
+  width: 110px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out; /* Only rotate transform is needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Light card shadow */
+}
 
 /*Card sides*/
 .card .front,
@@ -88,12 +83,12 @@ p {
 }
 
 .card .front {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
-    transform: rotateY(180deg);
-    background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  transform: rotateY(180deg);
+  background-size: contain;
 }
 
 .card .front img {
@@ -102,7 +97,6 @@ p {
   object-fit: cover;
   display: block;
 }
-   
 
 .card .back {
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23202025ff'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linecap='square' stroke-width='0.5' stroke='%23f7dc78ff' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linecap='square' stroke-width='0.5' stroke='%23ea5c52ff' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linecap='square' stroke-width='0.5' stroke='%234e98edff' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linecap='square' stroke-width='0.5' stroke='%236b44bfff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
@@ -118,4 +112,36 @@ p {
 }
 
 /*Responsive*/
+
+@media screen and (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card {
+    width: 76px;
+    height: 76px;
+  }
+  h1 {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .score-actions-container {
+    gap: 8rem;
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 780px) {
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+  .score-actions-container {
+    margin-top: 0;
+  }
+}
 
