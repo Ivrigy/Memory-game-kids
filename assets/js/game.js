@@ -101,7 +101,22 @@ function flipCard() {
 }
 
 //check matching
+function checkForMatch() {
+  var isMatch = firstCard.getAttribute("data-name") === secondCard.getAttribute("data-name");
+  if (isMatch) {
+    disableCards();
+  } else {
+    unflipCards();
+  }
+}
 
 //flip back if not match
+function unflipCards() {
+  setTimeout(function() {
+    firstCard.classList.remove("flipped");
+    secondCard.classList.remove("flipped");
+    resetBoard();
+  }, 1000);
+}
 
 //reset and restart
