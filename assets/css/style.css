@@ -131,7 +131,13 @@ p {
   }
   .score-actions-container {
     gap: 8rem;
-    margin-top: 0rem;
+    margin-top: -10px;
+  }
+  .actions {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.9rem;
   }
 }
 
