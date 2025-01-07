@@ -126,3 +126,16 @@ function unflipCards() {
 }
 
 //reset and restart
+
+function resetBoard() {
+  firstCard = null;
+  secondCard = null;
+  lockBoard = false;
+}
+
+function restart() {
+  resetBoard();
+  score = 0;
+  document.querySelector(".score").textContent = score;
+  initializeGame();
+}
