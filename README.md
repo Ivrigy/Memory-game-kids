@@ -6,4 +6,23 @@ Memorishka game is made for kids but it can also be useful for people of all oth
 ![Memorishka responsive](docs/screenshots/responsive.jpeg)
 
 ### Table of content
+* [User Stories] (#user-stories)
+* [Features] (#features)
+    * [Game Name] (game-name)
+    * [Game Screen] (game-screen)
+    * [Cards] (cards)
+    * [Buttons] (buttons)
+* [Responsive Design] (#responsive-design)
+* [Wireframes] (wireframes)
+* [Design] (#design)
+    * [Colors] {colors}
+    * [Typography] (#typography)
+* [Testing] (#testing)
+    * [Manual Testing] (#manual-testing)
+    * [Validation] (#validation)
+    * [Bugs] (#bugs)
+* [Deployment] (#deployment)
+    * [Development Process] (#development-process)
+* [Credits] (#credits)
+* [Acknowledgments] (#acknowledgments)
 
