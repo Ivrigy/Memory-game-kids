@@ -118,6 +118,10 @@ p {
 
 /* Media responsive */
 @media screen and (max-width: 640px) {
+
+  body {
+    max-height: 90vh;
+  }
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
   }
