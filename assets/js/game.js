@@ -80,9 +80,25 @@ function shuffleCards() {
   }
 }
 
-//generate dards
-
 //flip cards
+function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add("flipped");
+
+  if (!firstCard) {
+    firstCard = this;
+    return;
+  }
+
+  secondCard = this;
+  score++;
+  document.querySelector(".score").textContent = score;
+  lockBoard = true;
+
+  checkForMatch();
+}
 
 //check matching
 
