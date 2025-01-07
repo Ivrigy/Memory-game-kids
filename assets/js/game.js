@@ -69,7 +69,19 @@ function generateCards() {
 
 //duplicate array
 
-//shuffle
+//shuffle Fisher-Yates as seen in mant different sources
+function shuffleCards() {
+    var currentIndex = cards.length;
+    while (currentIndex !== 0) {
+    var randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+//swap
+var temp = cards[currentIndex];
+cards[currentIndex] = cards[randomIndex];
+cards[randomIndex] = temp;
+}
+
+}
 
 //generate dards
 
