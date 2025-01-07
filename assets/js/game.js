@@ -109,6 +109,12 @@ function checkForMatch() {
     unflipCards();
   }
 }
+//freeze matched
+function disableCards() {
+  firstCard.removeEventListener("click", flipCard);
+  secondCard.removeEventListener("click", flipCard);
+  resetBoard();
+}
 
 //flip back if not match
 function unflipCards() {
