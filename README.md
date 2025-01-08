@@ -15,5 +15,30 @@ As a child: I want a simple memory game that I can easily understand and do
 As a child: I want game to be fun and colorful
 As a child: I want a fun and friendly competition to see who can turn more cards
 
+## Features
+As a fully minimalistic game with the main focus on the user needs, this project also had basic and minimalistic features. 
 
+![Homescreen](docs/screenshots/fliped.jpeg)
 
+### Heading 
+
+![Heading](docs/screenshots/header.jpeg)
+
+As the AMVP is focused on the game itself the heading of the website is also minimalistic simultaneously aiming to address the Title and bring super minimalistic explanation of how to play the game. As part of my users are still not able to read, but for probably have played  same game in physical form, whole section is modelled to that. 
+
+### Game and Cards
+
+![Container](docs/screenshots/container.jpeg)
+
+I wanted to create a simple, colorful interface that immediately draws children’s attention to the game container. Each card contains engaging images or patterns that correspond to second user story. Images of animals are graphical what also corresponds with age of the main user. 
+
+### Buttons and actions
+![Action](docs/screenshots/actions.jpeg)
+
+This section of the game’s interface displays two different functions that the game offers. The score counter provides immediate feedback by tallying how many attempts a player has made while searching for matching card pairs, encouraging a more strategic approach to each flip. I decided to include only this function, without a timer, as a timer can put too much pressure on kids. The Restart button, prominently displayed, allows for a swift reshuffle and a full game reset, granting players an instant do-over whenever they want to refine their strategy or simply start fresh. This part of the interface is designed with contrasting colors and clear typography, helping children quickly see their progress and easily restart the game if they wish to try again.
+
+### Favicon
+
+![Fav](docs/screenshots/favicon.jpg)
+
+The dragon favicon exudes both playfulness and a hint of mystery, perfectly capturing the spirit of Memorishka. Its vivid green hue and whimsical design invite players into a realm where imagination meets memory skills, instantly signaling a fun yet engaging experience. 
